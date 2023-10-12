@@ -1,20 +1,27 @@
 import Interface.Futbolcu;
 import Interface.GencYetenek;
 import Interface.TeknikAdam;
-import Interface.Yönetici;
+
+
 
 public class Main {
 	public static void main(String []args) {
 		
-	 NormalTopçu();
-	 YetenekliTopçu();
+	 //NormalTopçu();
+	 //YetenekliTopçu();
 	 Yönet();
 	 
 	}
 	private static void Yönet() {
 		TeknikAdam teknik= new TeknikAdam();
+		Futbolcu Futbol = new Futbolcu();
 		teknik.TakımıYönet();
-		teknik.TakımıKontrol();
+		
+		System.out.println("Yıldız Oyuncu Bunları yapabilir -----------------------------");
+		teknik.TakımaOyuncuAl(new GencYetenek());
+		
+		System.out.println("NORMAL OYUNCU BUNLARI YAPABİLİR-----------------------------------");
+		teknik.NormalOyuncuAl(new Futbolcu());
 		
 	}
 	private static void YetenekliTopçu() {

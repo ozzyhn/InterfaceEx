@@ -1,6 +1,7 @@
 package Interface;
 
 public class GencYetenek implements YıldızOyuncu {
+	
 
 	@Override
 	public void formagiy() {
